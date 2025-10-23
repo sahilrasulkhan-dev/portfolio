@@ -3,87 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio | Sahil</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Sahil Rasul Khan | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- ===== HEADER ===== -->
   <header>
-    <h1>SAHIL RASUL KHAN</h1>
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container nav-bar">
+      <h1 class="logo">Sahil <span>Rasul</span> Khan</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero" id="hero">
-    <h2>Hello, I'm <span class="highlight">Sahil</span></h2>
-    <p>Aspiring AI & ML Engineer | Tech Enthusiast | Web Developer</p>
-  </section>
-
-  <section id="about">
-    <div class="glass-box">
-      <h3>About Me</h3>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Hello, I’m <span>Sahil Rasul Khan</span></h2>
+      <div class="typing"></div>
       <p>
-       I’m Sahil Rasul Khan, a passionate B.Tech student at SVIET, Chandigarh, with a growing interest in Artificial Intelligence, Web Development, and modern technology.
-I love exploring how technology shapes the world around us — whether it’s building intelligent systems or creating interactive websites.Apart from coding, I enjoy playing video games, experimenting with new tools, and constantly learning new skills that help me improve as a developer and a creator.
+        A passionate B.Tech student at <strong>Swami Vivekanand Institute of Engineering and Technology</strong> who loves building beautiful and modern web experiences.
       </p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-blue">About Me</a>
+        <a href="#contact" class="btn btn-pink">Contact</a>
+      </div>
     </div>
   </section>
 
-  <section id="education">
-    <div class="glass-box">
-      <h3>Education</h3>
-      <ul>
-        <li><b>B.Tech in Computer Science (AI & ML)</b> – 2025</li>
-        <li>SWAMI VIVEKANAND INSTITUTE OF ENGINEERING & TECHNOLOGY,Chandigarh India</li>
-        <li>CGPA: 8.9 / 10</li>
-      </ul>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section reveal">
+    <h2 class="title">About Me</h2>
+    <p>
+      I’m <strong>Sahil Rasul Khan</strong>, a dedicated and creative web developer pursuing my B.Tech from 
+      <strong>Swami Vivekanand Institute of Engineering and Technology</strong>.  
+      I’m from "City of waterfalls", <strong>RANCHI JHARKHAND</strong>.
+      
+      I completed my 10th and 12th from <strong>DAV Public School</strong>.
+      
+      In my free time, I enjoy <strong>playing video games</strong> and <strong>watching web series</strong>, which inspire my creativity.
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section reveal">
+    <h2 class="title">Education</h2>
+    <div class="education-box">
+      <div class="edu-item blue-card">
+        <h3>B.Tech — Computer Science</h3>
+        <p>Swami Vivekanand Institute of Engineering and Technology</p>
+        <span>Currently Pursuing</span>
+      </div>
+      <div class="edu-item green-card">
+        <h3>12th — DAV Public School</h3>
+        <span>Completed</span>
+      </div>
+      <div class="edu-item pink-card">
+        <h3>10th — DAV Public School</h3>
+        <span>Completed</span>
+      </div>
     </div>
   </section>
 
-  <section id="skills">
-    <div class="glass-box">
-      <h3>Skills</h3>
-      <ul>
-        <li>Web development</li>
-        <li>Machine Learning & Data Analysis</li>
-        <li>React, Node.js</li>
-        <li>UI/UX Design, Responsive Web</li>
-      </ul>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section reveal">
+    <h2 class="title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card yellow-card">
+        <h3>HTML</h3>
+        <p>Building responsive and semantic web structures.</p>
+      </div>
+      <div class="skill-card blue-card">
+        <h3>CSS</h3>
+        <p>Designing stylish, animated, and flexible layouts.</p>
+      </div>
+      <div class="skill-card pink-card">
+        <h3>Canva</h3>
+        <p>Designing stunning graphics and visuals.</p>
+      </div>
     </div>
   </section>
 
-  <section id="hobbies">
-    <div class="glass-box">
-      <h3>Hobbies & Interests</h3>
-      <ul>
-        <li>Public Speaking</li>
-        <li>Gaming & Tech Exploration</li>
-        <li>Photography</li>
-        <li>Fitness </li>
-      </ul>
-    </div>
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section reveal">
+    <h2 class="title">Contact Me</h2>
+    <p>Want to work together or just say hi? Drop a message below:</p>
+    <form class="contact-form" onsubmit="return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-green">Send Message</button>
+    </form>
   </section>
 
-  <footer id="contact">
-    <h3>Contact Me</h3>
-    <ul>
-        <li> Email: sahilrasulkhan@gmail.com</li>
-        <li> Phone: +91 9631121121</li>
-    </ul></u>
-    <p>Let’s connect on my social profiles below 👇</p>
-    <div class="social-links">
-      <a href="https://instagram.com/" target="_blank">📸</a>
-      <a href="https://linkedin.com/" target="_blank">💼</a>
-      <a href="https://github.com/" target="_blank">🐱‍💻</a>
-    </div>
-    <p class="footer-note">© 2025 Sahil Khan. All Rights Reserved.</p>
+  <footer>
+    <p>© <span id="year"></span> Sahil Rasul Khan | All Rights Reserved</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
